@@ -1,0 +1,9 @@
+{
+    "dct:identifier": "election-presidentielle",
+    "dct:title": "election-presidentielle",
+    "dct:description": "Description de l'algorithme",
+    "cprmv:isBasedOn": {
+        "dct:source": "",
+        "dct:description": "Référence réglementaire"
+    }
+}

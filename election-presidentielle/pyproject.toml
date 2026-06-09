@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "election-presidentielle"
+version = "0.1.0"
+description = ""
+packages = [{include = "election_presidentielle", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+regalgo = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
