@@ -27,12 +27,17 @@ class ElectionPresidentielle(PublicRule):
         tutelle = bool(algo_input.data["tutelle"])
         curatelle = bool(algo_input.data["curatelle"])
         service_national_valide = bool(algo_input.data["service_national_valide"])
-    
+        
+        if age <=0 :
+            raise ValueError(f"L'âge doit être strictement positif, reçu{age}")
+        
+        peut_presenter = nationalite and age >=18 and electeur and not ineligible and not tutelle and not curatelle and service_national_valide
+
 
 
 
         
-        result_value = None
+        result_value = peut_presenter
 
         return AlgoResult(
             value=result_value,
