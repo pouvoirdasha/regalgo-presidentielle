@@ -23,7 +23,7 @@ class ElectionPresidentielle(PublicRule):
         nationalite = bool(algo_input.data["nationalite_française"])
         age = int(algo_input.data["age"])
         electeur = bool(DroitVoteAlgorithm(algo_input.data)) # la bonne manière de faire ? 
-        ineligible = bool(algo_input.data[ineligible])
+        ineligible = bool(algo_input.data["ineligible"])
         tutelle = bool(algo_input.data["tutelle"])
         curatelle = bool(algo_input.data["curatelle"])
         service_national_valide = bool(algo_input.data["service_national_valide"])
